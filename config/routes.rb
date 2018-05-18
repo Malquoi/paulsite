@@ -17,4 +17,8 @@ Rails.application.routes.draw do
 
   end
 
+  resources :artworks, only: [:index]
+
+resources :infos, only: [:index, :new, :create, :edit, :show, :update, :destroy]
+
 end
