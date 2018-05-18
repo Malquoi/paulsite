@@ -6,7 +6,7 @@
     <div class="skeleton-left text-center">
       <div class="link-border-container">
         <div id="link-rotate-right">
-          <%= link_to "- home -", projects_path,  class:"link-border" %>
+          <%= link_to "- virtual reality -", vr_projects_path,  class:"link-border" %>
         </div>
       </div>
     </div>
@@ -15,47 +15,24 @@
     <div class="skeleton-middle text-center">
       <div class="project">
 
-        <div class= 'projects-controls-row hidden-xs hidden-sm'>
+        <div class= 'projects-controls-row hidden-xs'>
           <div class= 'projects-controls-row-div'></div>
           <div class = 'projects-controls-row-div'>
             <%= render 'shared/project/projects_controls' %>
           </div>
         </div>
-        <div class= 'projects-controls-row hidden-xs  hidden-md hidden-lg'>
-          <div class= 'projects-controls-row-div-sm'></div>
-          <div class = 'projects-controls-row-div-sm'>
-            <%= render 'shared/project/projects_controls' %>
-          </div>
-        </div>
 
-
-        <div class="project-presentation hidden-sm">
+        <div class=project-presentation>
           <p class="project-project-name hidden-xs" ><%= @project.name%><span> </span><%=@project.name2%></p>
           <p class="project-project-presentation hidden-xs"><%= @project.presentation%></p>
           <p class="project-project-date"><%=@project.date%></p>
           <p class="project-project-commentary hidden-xs"><%= simple_format(@project.commentary, class: "project-project-commentary hidden-xs")%></p>
+
         </div>
 
-        <div class="project-presentation-sm hidden-xs hidden-md hidden-lg">
-          <p class="project-project-name hidden-xs" ><%= @project.name%><span> </span><%=@project.name2%></p>
-          <p class="project-project-presentation hidden-xs"><%= @project.presentation%></p>
-          <p class="project-project-date"><%=@project.date%></p>
-          <p class="project-project-commentary-sm"><%= simple_format(@project.commentary, class: "project-project-commentary hidden-xs")%></p>
-        </div>
-
-        <div class="project-artworks-container hidden-xs hidden-sm">
+        <div class="project-artworks-container hidden-xs">
           <div class="hidden-box hidden-xs"></div>
-          <%#= render 'shared/projects/project_artworks_container' %>
-        </div>
-
-        <div class="project-artworks-container-md hidden-xs hidden-sm hidden-lg">
-          <div class="hidden-box hidden-xs"></div>
-          <%#= render 'shared/projects/project_artworks_container' %>
-        </div>
-
-        <div class="project-artworks-container-sm hidden-xs hidden-md hidden-lg">
-          <div class="hidden-box hidden-xs"></div>
-          <%#= render 'shared/projects/project_artworks_container' %>
+          <%#= render 'shared/project/project_artworks_container' %>
         </div>
 
 
@@ -77,50 +54,35 @@
 <div class= "page hidden-sm hidden-md hidden-lg">
 
 
-<%#= render 'shared/navbar/navbar_project_xs'%>
+<%#= render 'shared/navbar/navbar_project_vr_xs'%>
 
   <div class="skeleton text-center">
 
     <div class="skeleton-middle-xs text-center">
-
       <div class="project">
-        <div class= 'projects-controls-row-xs hidden-sm hidden-md hidden-lg'>
+
+        <div class= 'projects-controls-row hidden-sm hidden-md hidden-lg'>
           <div class = 'projects-controls-row-div-xs'>
             <%#= render 'shared/projects_controls' %>
           </div>
         </div>
 
-        <div class=project-presentation-xs>
+        <div class=project-presentation>
           <p class="project-project-name-xs hidden-sm hidden-md hidden-lg" ><%= @project.name %><span> </span><%= @project.name2%></p>
           <p class="project-project-presentation-xs hidden-sm hidden-md hidden-lg"><%= @project.presentation%></p>
           <p class="project-project-date"><%=@project.date%></p>
           <p class="project-project-commentary-xs hidden-sm hidden-md hidden-lg"><%= simple_format(@project.commentary, class: "project-project-commentary-xs hidden-sm hidden-md hidden-lg") %></p>
         </div>
-
         <div class="project-artworks-container-xs hidden-sm hidden-md hidden-lg ">
         <div class="hidden-box-xs hidden-sm hidden-md hidden-lg"></div>
           <%#= render 'shared/project_artworks_container' %>
         </div>
       </div>
-
     </div>
 
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

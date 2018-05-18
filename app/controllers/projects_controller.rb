@@ -1,14 +1,14 @@
 class ProjectsController < ApplicationController
 
-skip_before_action :authenticate_user!, only: [:index, :show]
+skip_before_action :authenticate_user!, only: [:index, :show, :vr, :showvr, :lastest]
 
-before_action :set_project, only: [:show, :edit]
+before_action :set_project, only: [:show, :edit, :update, :destroy, :showvr, :lastest]
 
 
 
 def index
 
-  @projects = Project.all
+  @projects = Project.where.not(id: '1')
 
 end
 
@@ -32,6 +32,28 @@ end
 
   end
 
+  def showvr
+
+  end
+
+  def lastest
+  end
+
+
+  def update
+    @project.update(project_params)
+    redirect_to project_path(@project)
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path
+  end
+
+
+def vr
+  @projects = Project.where(category: 'virtual_reality')
+end
 
 
   private
@@ -48,10 +70,3 @@ end
 
 
 end
-
-
-
-
-
-
-

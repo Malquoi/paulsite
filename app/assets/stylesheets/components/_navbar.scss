@@ -1,0 +1,147 @@
+.navbar-xs {
+  height: 5vh;
+  //padding-top: 3vh;
+  width: 100%;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  color: $blackdp;
+  background-color: white;
+  //background-color: black;
+
+}
+
+.navbar-left {
+  width: 70%;
+  //background: yellow;
+  height: 5vh;
+  padding-left: 20px;
+}
+
+.navbar-left-links {
+  margin-top: 5px;
+}
+
+.navbar-left-links a {
+  margin: 0px 5px;
+  color: green;
+}
+
+.home-icon {
+  border:none;
+  position: absolute;
+  top: 2vh;
+  left: 5vh;
+  opacity: 0.9;
+  color:$blackdp;
+
+  height: 2vh;
+  cursor:pointer;
+}
+
+.home-icon i {
+  color:$blackdp;
+  opacity: 0.8;
+}
+
+
+
+
+
+.navbar-right {
+  width: 30%;
+  height: 5vh;
+  //background: orange;
+  z-index: 10;
+  align-items: center;
+  display: flex;
+  align-items: right;
+  position: relative;
+  //justify-content: right;
+}
+
+
+.dropdown-button{
+  //background:blue;
+  border:none;
+  position: absolute;
+  top: 2vh;
+  right: 5vh;
+  opacity: 0.9;
+  color:$blackdp;
+  height: 2vh;
+  cursor:pointer;
+}
+
+.dropdown-button:hover{
+  opacity:0.4;
+  transition:0.3s;
+  cursor:pointer;
+
+}
+
+
+
+
+
+.dropdown-panel{
+  position:absolute;
+  top: 6vh;
+  right: 5.5vh;
+  background-color:transparent;
+  width:280px;
+  display:none;
+  z-index: 11;
+  //background: yellow;
+}
+
+
+
+
+.dropdown-panel ul li a{
+  color:$blackdp;
+  display:block;
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 18px;
+  text-transform:uppercase;
+  font-size: 9px;
+  letter-spacing: 4.5;
+  opacity: 0.9;
+
+}
+
+.dropdown-panel ul li a:hover{
+  background:white;
+  //background: yellow;
+}
+
+.dropdown-panel ul{
+  list-style:none;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1px;
+  padding-bottom: 15px;
+  background-color: white;
+  //background: black;
+}
+
+
+.navbar {
+  //height: 6vh;
+  height: 4vh;
+  width: 100%;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  color: $blackdp;
+  background-color: white;
+  //background-color: black;
+
+}
+
+
+
