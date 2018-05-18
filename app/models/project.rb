@@ -1,7 +1,7 @@
 class Project < ApplicationRecord
   default_scope { order(ranking: :asc)}
 
-
+has_many :artworks
 mount_uploader :photo, PhotoUploader
 
 CATEGORIES =%w( drawing painting virtual_reality other_project )

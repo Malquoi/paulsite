@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       get 'showvr', to: 'projects#showvr'
       get 'lastest', to: 'projects#lastest'
     end
+    resources :artworks, only: [:new, :create, :edit, :show, :showvr, :update, :destroy ], shallow: true
 
   end
 
