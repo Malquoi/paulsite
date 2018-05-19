@@ -23,4 +23,6 @@ resources :infos, only: [:index, :new, :create, :edit, :show, :update, :destroy]
 
 resources :events, only: [:index, :new, :create, :edit, :show, :update, :destroy]
 
+resources :texts, only: [:index, :new, :create, :edit, :update, :destroy]
+
 end
