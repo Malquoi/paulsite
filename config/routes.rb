@@ -21,4 +21,6 @@ Rails.application.routes.draw do
 
 resources :infos, only: [:index, :new, :create, :edit, :show, :update, :destroy]
 
+resources :events, only: [:index, :new, :create, :edit, :show, :update, :destroy]
+
 end

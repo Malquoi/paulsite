@@ -14,7 +14,7 @@
 .projects-top-bottom {
   height: 13vh;
   display: flex;
-  //align-items: center;
+  align-items: center;
   justify-content: space-between;
   //background-color: red;
 }
@@ -25,8 +25,39 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  //background-color: red;
   }
+
+  .projects-title {
+  width: 430px;
+  height: 4.5vh;
+  margin-bottom: 6vh;
+  display: flex;
+  align-items: center;
+  border-radius: 1px;
+  justify-content: space-around;
+  //background-color: #0e1421;
+  //background-color: #163cc0;
+  //background-color: #0980f4;
+  //background-color: #03a7e9;
+  background-color:#da78b7;
+
+  }
+
+  .projects-title-bottom {
+  width: 250px;
+  height: 3.5vh;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  border-radius: 1px;
+  justify-content: space-around;
+
+
+  }
+
+
+
+
 
   .title-vr {
      //background: blue;
