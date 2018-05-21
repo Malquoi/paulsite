@@ -1,0 +1,24 @@
+<div class= "controls hidden-xs hidden-sm hidden-md">
+          <p class= "controls-links hidden-xs ">
+            <a href="">
+              <a href=""> <% if project = @project.previous_vr %>
+              <%= link_to project.name, showvr_project_path(project), class: "link-project"%>
+              <% end%></a>
+            <span>|</span>
+            <a href="">
+              <% if project = @project.next_vr   %>
+                <%= link_to project.name, showvr_project_path(project), class: "link-project"%><% end %>
+
+            </a></p>
+</div>
+
+        <div class= "controls-xs hidden-lg">
+          <p class= "controls-links-xs hidden-lg ">
+            <a href=""> <% if project = @project.previous_vr %>
+              <%= link_to project.name, showvr_project_path(project), class: "link-project-xs"%>
+              <% end%></a>
+            <span>|</span>
+            <a href=""><% if project = @project.next_vr  %>
+            <%= link_to project.name, showvr_project_path(project), class: "link-project-xs"%><% end %></a></p>
+        </div>
+

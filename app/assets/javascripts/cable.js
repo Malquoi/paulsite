@@ -11,3 +11,11 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+
+
+$(function(){
+  $(".dropdown-click .dropdown-button").click(function(){
+    $(".dropdown-click .dropdown-panel").toggle();
+  });
+});
+
