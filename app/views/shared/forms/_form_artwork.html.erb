@@ -14,7 +14,7 @@
             <%= f.input :description %>
             <%= f.input :format %>
             <%= f.input :date %>
-            <%= f.input :commentary, as: :text, :input_html => {:style => 'width: 100%', :rows => 5} %>
+            <%= f.input :commentary, as: :text, :input_html => {:style => 'width: 100%', :rows => 1} %>
              <% if @artwork.photo? %>
               <%= @artwork[:photo] %>
               <%= f.input :photo %>
@@ -29,6 +29,8 @@
         </div>
       </div>
     </div>
+
+    <div class="form-div-hidden"></div>
 
 
 

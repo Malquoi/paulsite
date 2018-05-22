@@ -12,7 +12,7 @@
               <%= f.input :ranking, collection: 1..100 %>
               <%= f.input :date %>
               <%= f.input :presentation %>
-              <%= f.input :commentary, as: :text, :input_html => {:style => 'width: 100%', :rows => 7} %>
+              <%= f.input :commentary, as: :text, :input_html => {:style => 'width: 100%', :rows => 1} %>
               <% if @project.photo? %>
               <%= @project[:photo] %>
               <%= f.input :photo %>
